@@ -1,5 +1,5 @@
 ---
-- include_tasks: "{{ role_path }}/tasks/{{ ansible_network_os }}-get-version.yml"
+- include_tasks: "{{ ansible_network_os }}-get-version.yml"
 
 - set_fact:
     net_compare_version: "{{ net_version_list[ansible_network_os] }}"
